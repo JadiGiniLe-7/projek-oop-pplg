@@ -4,7 +4,7 @@ date_default_timezone_set('Asia/Jakarta');
 
 if (isset($_GET['action']) && $_GET['action'] == 'clear') {
     $_SESSION['kopi'] = [];
-    header("Location: soal.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'waktu' => $waktu
     ];
 
-    header("Location: soal.php");
+    header("Location: index.php");
     exit();
 }
 
